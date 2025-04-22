@@ -1,0 +1,63 @@
+ <!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .container{
+            display: grid;
+            grid-template-columns: 1fr 3fr;
+            height:100vh; /*marrin komplet gjatesine e desktopit*/
+            grid-template-rows: auto 1fr auto; 
+            /*sa eshte gjatesia e rreshtave,,auto(ne keet rast header dhe footer) qe programi me marr gjatesine e sa elementeve eshte mrena
+            1fr(ne kete rast klasa main dhe aside) me zon perafersisht 1fr */
+            grid-template-areas: 
+            "header header"
+            "aside main"
+            "footer footer"
+            ;
+        }
+        .header{
+            grid-area: header;
+            background-color: red;
+        }
+
+        .main{
+            grid-area: main;
+            background-color: green;
+        }
+
+        .aside{
+            grid-area: aside;
+            background-color: blue;
+        }
+
+        .footer{
+            grid-area: footer;
+            background-color: orange;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="header">
+            <h1>Titulli i pare</h1>
+            <p>Paragraf tjeter</p>
+        </div>
+
+        <div class="aside">
+            <img src="foto.jpeg" alt="" width="50">
+        </div>
+
+        <div class="main">
+            <h2>Titulli i dyte</h2>
+            <p>Paragrafi style</p>
+        </div>
+
+        <div class="footer">
+            <p>Footer</p>
+        </div>
+    </div>
+</body>
+</html>

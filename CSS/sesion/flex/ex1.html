@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+    .container{
+        background-color:blue;
+        display: flex;
+        flex-direction: row;
+        justify-content:flex-start;
+    }
+    .container>div{
+        background-color: grey;
+        margin:10px;
+        padding:10px;
+        font-size:30px;
+    }
+
+    .pjesa2{
+        background-color: blue;
+        display: flex;
+        margin-top: 30px;
+        flex-direction: row;
+        justify-content:flex-end;
+    }
+    .pjesa2>div{
+        background-color: grey;
+        margin:10px;
+        padding:10px;
+        font-size:30px;
+    }
+    .pjesa3{
+        background-color: blue;
+
+        margin-top:30px;
+        display: flex;
+        flex-direction: row;
+        justify-content:center; /*elementet qendrojne ne mes*/
+    }
+    .pjesa3>div{
+        background-color: grey;
+        margin:10px;
+        padding:10px;
+        font-size:30px;
+    }
+
+    .pjesa4{
+        background-color: blue;
+        margin-top:30px;
+        display: flex;
+        flex-direction: row;
+        justify-content:space-around; /*hapsira e njejte mes numrave */
+    }
+    .pjesa4>div{
+        background-color: grey;
+        margin:10px;
+        padding:10px;
+        font-size:30px;
+    }
+
+    .pjesa5{
+        background-color: blue;
+        margin-top:30px;
+        display: flex;
+        flex-direction: row;
+        justify-content:space-between;/*vetem hapesira mes numrave llogaritet e njejte dhe ka hapesire ne mes*/
+    }
+    .pjesa5>div{
+        background-color: grey;
+        margin:10px;
+        padding:10px;
+        font-size:30px;
+    }
+
+    .pjesa6{
+        background-color: blue;
+        margin-top:30px;
+        display: flex;
+        flex-direction: row;
+        justify-content:space-evenly;/*hapesira mes numrave dhe para numrave eshte e njejte*/
+    }
+    .pjesa6>div{
+        background-color: grey;
+        margin:10px;
+        padding:10px;
+        font-size:30px;
+    }
+
+    .pjesa7{
+        background-color: blue;
+        margin-top:30px;
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap; /*nowrap;kur te minimizohet faqja nuk dalin elementet ne rresht tjeter,kurse te wrap dalin te rreshti tjeter*/
+    }
+    .pjesa7>div{
+        background-color: grey;
+        margin:10px;
+        padding:10px;
+        font-size:30px;
+    }
+</style>
+<body>
+    <div class="container">
+        <div>1</div>
+        <div>2</div>
+        <div>3</div>
+        <div>4</div>
+    </div>
+    <div class="pjesa2">
+        <div>1</div>
+        <div>2</div>
+        <div>3</div>
+        <div>4</div>
+    </div>
+
+    <div class="pjesa3">
+        <div>1</div>
+        <div>2</div>
+        <div>3</div>
+        <div>4</div>
+    </div>
+
+    <div class="pjesa4">
+        <div>1</div>
+        <div>2</div>
+        <div>3</div>
+        <div>4</div>
+    </div>
+
+    <div class="pjesa5">
+        <div>1</div>
+        <div>2</div>
+    </div>
+
+    <div class="pjesa6">
+        <div>1</div>
+        <div>2</div>
+        <div>3</div>
+        <div>4</div>
+    </div>
+
+    <div class="pjesa7">
+        <div>1</div>
+        <div>2</div>
+        <div>3</div>
+        <div>4</div>
+        <div>5</div>
+        <div>6</div>
+        <div>7</div>
+        <div>8</div>
+        <div>9</div>
+        <div>10</div>
+    </div>
+</body>
+</html>

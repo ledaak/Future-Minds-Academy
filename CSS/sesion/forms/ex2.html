@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <form action="action_page.php" method="POST">
+        <label for="username">Emri</label>
+        <input type="text" name="username" placeholder="shkruaj emri" required><br><br>
+        <label for="password">Password</label>
+        <input type="password" name="password" placeholder="shkruaj pasin" required><br><br>
+        <label for="data">Data</label>
+        <input type="date"><br><br>
+        <label for="Komente">Komento</label>
+        <textarea name="komente" cols="10" rows="8"></textarea><br><br>
+
+        <label for="gjinia">Zgjedh gjinine</label>
+        <input type="radio" name="gjinia">Mashkull
+        <input type="radio" name="gjinia">Femer <br><br>
+
+        <label for="muzika">Muzika qe pelqej</label>
+        <input type="checkbox" name="muzika">HipHop
+        <input type="checkbox" name="muzika">Popullore <br><br>
+
+        <label for="Selekto">Selekto</label>
+        <select name="pagesa">
+            <option value="VisaCard">VisaCard</option>
+            <option value="MasterCard">MasterCArd</option>
+        </select> <br><br>
+
+        <label for="File">CHooseFile</label>
+        <input type="file"><br><br>
+
+        <label for="email">Email</label>
+        <input type="email" name="email" placeholder="shkruaj email"> <br><br>
+
+        <label for="number">Sasia</label>
+        <input type="number" name="number" ><br><br>
+
+        <fieldset>
+            <legend>Kontaktet</legend>
+            <label for="number">Numri</label>
+            <input type="num" name="number" placeholder="+383-45-000-000"><br><br>
+            <label for="email">Email</label>
+            <input type="email" name="email" placeholder="example@gmail.com">
+        </fieldset><br><br>
+        
+        <input type="submit" value="Regjistrohu">
+        <input type="reset">
+    </form>
+</body>
+</html>

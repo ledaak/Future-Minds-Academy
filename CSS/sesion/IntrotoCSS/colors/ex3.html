@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Flexbox Gallery</title>
+  <link rel="stylesheet" href="styles.css">
+  <style>
+    /* Kontejneri Flexbox */
+.gallery {
+  display: flex;
+  gap: 20px; /* Hapësirë mes imazheve */
+  justify-content: center; /* Qendron elementet në mes */
+  align-items: center; /* Qendron vertikalisht në mes */
+  padding: 20px;
+  background-color: #f0f0f0;
+}
+
+/* Stilizimi i çdo imazhi */
+.image {
+  background-color: lightblue;
+  color: white;
+  text-align: center;
+  padding: 30px;
+  font-size: 20px;
+  border-radius: 8px;
+  font-weight: bold;
+  height: 200px; /* Lartësia fikse për secilin element */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  
+}
+p::first-letter{
+  font-size: 50px;
+  text-decoration: overline;
+  text-decoration-style: wavy;
+  text-decoration-color: orange;
+}
+/* Flexbox për çdo imazh */
+.image1 {
+  flex: 1 1 150px; /* flex-grow: 1, flex-shrink: 1, flex-basis: 150px */
+}
+
+.image2 {
+  flex: 2 1 200px; /* flex-grow: 2, flex-shrink: 1, flex-basis: 200px */
+}
+
+.image3 {
+  flex: 1 2 250px; /* flex-grow: 1, flex-shrink: 2, flex-basis: 250px */
+}
+
+  </style>
+</head>
+<body>
+
+  <div class="gallery">
+    <div class="image image1"><img src="../../fotografite/images.jpg"></div>
+    <div class="image image2"><img src="../../fotografite/images.jpg"></div>
+    <div class="image image3"><img src="../../fotografite/images.jpg"></div>
+  </div>
+<p>Paragrafi i pare</p>
+</body>
+</html>
+
+</body>
+</html>

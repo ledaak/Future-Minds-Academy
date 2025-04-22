@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        li:nth-child(2), :nth-child(5){
+            font-weight: bold;
+        }
+        li:nth-child(even){
+            background-color: green;
+        }
+        li:nth-child(odd){
+            background-color: blue;
+        }
+        li:nth-child(3n+1){
+            color: yellow;
+        }
+        .bb{
+            text-transform: capitalize;
+            text-decoration: underline;
+            text-decoration-style:double ;
+        }
+        p{
+            word-spacing: 30px;
+        }
+    </style>
+</head>
+<body>
+    <ul>
+        <li>e1</li>
+        <li>e2</li>
+        <li>e3</li>
+        <li>e4</li>
+        <li>e5</li>
+        <li>e6</li>
+        <li>e7</li>
+        <li>e8</li>
+    </ul>
+    <h1>Titulli i pare</h1>
+    <p class="bb">Paragrafi i pare ne kete file</p>
+    <p>Paragrafi  i dyte</p>
+</body>
+</html>

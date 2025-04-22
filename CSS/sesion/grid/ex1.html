@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .container{
+            background-color: blue;
+            display: grid; /*renditje e el ne kolona edhe rreshta,el e vendosura ne forme te rrjetes */
+            grid-template-columns: 100px 100px 100px 100px 100px;/* 5 kolona me 100x ne kolone*/
+            grid-template-rows:100px 100px 100px 100px ;/*4 rreshta,mund te jene edhe 1fr njesi qe mundson me 
+            marr kejt kolonen ose kejt rreshtin,komplet desktopin,jane hapesira e ndara te barabaarta,nese e kemi 2fr
+            mund ti marr dy kolona ose dy rreshta*/
+            gap: 20px;
+        }
+        .container>div{
+            background-color: gray;
+            color:white;
+            text-align: center;
+            font-size: 30px;
+            padding: 10px;
+            margin: 10px;
+        }
+        .epara{
+          grid-row: 1/3; /*elementi fillon tek rreshti(row)i pare deri te i treti*/
+          grid-column: 1/4; /*njejte si te grid row por me kolone,grid-column-start,grid-column-end*/
+
+        }
+        .edyta{
+            grid-column: 4/6;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="epara">1</div>
+        <div class="edyta">2</div>
+        <div class="etreta">3</div>
+        <div class="ekaterta">4</div>
+        <div class="epesta">5</div>
+        <div class="egjashta">6</div>
+        
+
+    </div>
+</body>
+</html>

@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .container{
+            background-color: blue;
+            display:grid;
+            grid-template-columns: repeat(auto-fit,minmax(200px,1fr)); 
+            /*autofill- elementet kane .hapesire. edhe left edhe right,hapesira ne permbajtje*/   
+            /*autofit-me mbush kejt permbajtjen/faqen,minmax gjersia minimale 200px po nese ka mundesi (gjeresia gjatesia)
+             shkon me shume se 200px dhe nuk len hapesira anash*/
+            
+            grid-auto-rows: 200px;
+            justify-content: center;
+            gap:10px;
+        }
+        .container>div{
+            background-color: gray;
+            color:white;
+            font-size: 30px;
+            border-radius: 10px;
+            margin:10px;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div>1</div>
+        <div>2</div>
+        <div>3</div>
+        <div>4</div>
+        <div>5</div>
+        <div>6</div>
+        <div>7</div>
+        <div>8</div>
+    </div>
+    
+</body>
+</html>

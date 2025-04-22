@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .container{
+            display: grid;
+            grid-template-rows:100px 300px 100px;
+            grid-template-columns: 3fr 1fr;
+            grid-template-areas: 
+            'header header'
+            'main aside'
+            'footer footer'
+            ;
+        }
+        .item1{
+            grid-area:header;
+            background-color: orange;
+        }
+        .item2{
+            grid-area:main;
+            background-color: rgb(22, 158, 60);
+        }
+        .item3{
+            grid-area:aside;
+            background-color: rgb(165, 165, 13);
+        }
+        .item4{
+            grid-area:footer;
+            background-color: orange;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="item1">
+            <h1>Titull</h1>
+        </div>
+        <div class="item2">
+            <img src="" alt="@ foto">
+        </div>
+        <div class="item3">
+            <img src="" alt="hapesire reklamuese">
+        </div>
+        <div class="item4">
+            &copy;
+        </div>
+    </div>
+</body>
+</html>

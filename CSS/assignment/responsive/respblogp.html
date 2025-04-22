@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+    <html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Document</title>
+        <style>
+            .container{
+                /*<align-content></align-content> dy ose me shume rreshta*/
+                display: grid;
+                grid-template-columns: 1fr 2fr;
+                grid-template-rows: 1fr;
+                grid-area: 
+                "sb pinnedp"
+                ; 
+            }
+            .css{
+                background-color: green;
+                color: white;
+            }
+            .html{
+                background-color: blue;
+                color: white;
+            }
+            .sb{
+                background-color: rgb(51, 90, 77);
+                grid-area: sb;
+                color:white;
+            }
+            .pinnedp{
+                grid-area: pinnedp;
+            }
+            
+        </style>
+    </head>
+    <body>
+        <div class="container">
+            <aside class="sb">
+                <h1>A SAMPLE BLOG</h1>
+                <p>This is the sample blog</p>
+                <button class="login">LOG IN</button>
+            </aside>
+    
+            <main class="pinnedp">
+                <div class="postp">
+                  <p>PINNED POST</p>
+                  <h2>A pinned post</h2>
+                  <p>By <a href="#">John Doe </a>under <span class="css">CSS</span> <span clas="html">HTML</span> </p>
+                  <p>This is one of the pinned posts</p>
+                </div>
+    
+                <div class="recentp">
+                    <p>RECENT POST</p>
+                    <h2>A recent post</h2>
+                    <p>By <a href="#">Rocky Balboa </a>under <span class="css">CSS</span> <span clas="html">HTML</span> </p>
+                    <p>This is one of the recent posts</p>
+                  
+                </div>
+            </main>
+        </div>
+    </body>
+    </html>
+    

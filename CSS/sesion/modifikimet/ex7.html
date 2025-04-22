@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="sq">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> Grid</title>
+	<style>
+	/* Krijo një grid me 3 kolona dhe 2 rreshta */
+.grid-container {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr); /* 3 kolona me gjerësi të barabartë */
+    grid-template-rows: repeat(2, 200px); /* 2 rreshta me lartësi 200px */
+    gap: 10px; /* Hapësira ndërmjet elementëve */
+    padding: 10px;
+    background-color: #f0f0f0;
+}
+
+/* Dizajni i çdo itemi brenda gridit */
+.grid-container div {
+    background-color: #4CAF50;
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 20px;
+    border-radius: 5px;
+}
+
+/* Përshtatja e stilit për çdo item */
+
+</style>
+    </head>
+<body>
+    <div class="grid-container">
+        <div class="item1">Item 1
+        
+        </div>
+        <div class="item2">Item 2</div>
+        <div class="item3">Item 3</div>
+        <div class="item4">Item 4</div>
+        <div class="item5">Item 5</div>
+        <div class="item6">Item 6</div>
+    </div>
+</body>
+</html>

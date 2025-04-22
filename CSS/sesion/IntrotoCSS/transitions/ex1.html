@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style> /* /*proces qe ben elementin te kaloje nga nje gjendje ne tjeter kur 
+        na si perdorus krijojme efekt mbrenda atij elementi(shembull efekti: hover...)
+        justify-content--perdoret te flexi per me vendos elementin ne qender,larte,poshte,left,right
+        efekte te buta qe i jipet elementit*/
+
+        div{
+            width: 100px;
+            height:100px;
+            background-color: red;
+            transition-delay:1s; /*mundeson qe pasi te him ne web,me prit ni sekond para se mu ndrru efekti(hover)*/
+            transition-duration: 4s; /*mundeson qe efekti me zgjat 4s deri sa ta mrrin gjatesin 300px*/
+            transition-property:transform; /*nese kemi shum efekte e perdormi kete per me dit cilen veqori
+             me zgjedh ose a mu marr me background-color a me gjatesine/gjeresine*/
+
+        }
+
+        div:hover{
+            width:300px;  /*kur te afrohet mouse te divi,divi e mer efektin hover edhe rritet 300px*/
+            background-color: yellow;
+            transform: rotate(720deg); /*elementi ka me u sill 720 shkalle*/
+            
+        }
+    </style>
+</head>
+<body>
+    <div></div>
+</body>
+</html>

@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        div{
+            width:100px;
+            height: 100px;
+            background-color: red;
+            animation-name: shembull;
+            animation-duration: 4s;
+            position: relative;
+            animation-direction: alternate; /*me shku niher prej te pares te e fundit 0%-100% edhe pastaj mbrapa e kunderta*/
+            /*normal,alternate,alternate reverse,reverse(i kryn procedurat prej fundit)*/
+            animation-iteration-count: 2;
+            animation-fill-mode:forwards ; /*masi perfundon animacioni forwards(mu nal te vlerat e fundit)
+            backwards(mu nal te vlera e pare)*/
+         }
+
+        @keyframes shembull{
+           0%{background-color: red; top: 0px; left: 0px;}   /* nese pjesen e animacionit dojme me e nda me faza,starti*/
+           25%{background-color: green; top: 0px; left: 200px;}  /*sekondi i pare pasi i kemi 4s*/
+           50%{background-color: yellow; top: 200px; left: 200px;}
+           75%{background-color: orange; top: 200px; left: 200px;}
+           100%{background-color: blue;top: 0px;left: 0px;}
+        }
+
+        /*icon finder-ikonat qe duhen per projektin final*/
+
+    </style>
+</head>
+<body>
+    <div></div>
+</body>
+</html>

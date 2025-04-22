@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="sq">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Detyrë Flexbox</title>
+    <style>
+        /* Përdorimi i Flexbox për Header */
+header {
+    background-color: #333;
+    padding: 10px;
+}
+
+nav ul {
+    display: flex;
+    justify-content: space-around; /* Vendosja e linkeve me hapësirë të barabartë mes tyre */
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+
+nav a {
+    color: white;
+    text-decoration: none;
+    font-size: 18px;
+}
+
+/* Përdorimi i Flexbox për Main */
+main {
+    display: flex;
+    flex-direction: row; /* Elementet në main janë në rresht */
+    flex-wrap: wrap; /* Elementet mund të kalojnë në rreshta të rinj nëse nuk ka mjaftueshëm hapësirë */
+    justify-content: space-between; /* Vendosja e elementeve me hapësirë të barabartë mes tyre */
+    padding: 20px;
+}
+
+.element {
+    background-color: #f4f4f4;
+    padding: 20px;
+    width: 30%; /* Çdo element ka 30% të gjerësisë, mund të kalojë në rreshta të rinj kur nuk ka mjaft hapësirë */
+    margin-bottom: 20px;
+    border: 1px solid #ccc;
+    box-sizing: border-box;
+}
+
+h2 {
+    margin-top: 0;
+}
+a:hover{
+    color:green;
+}
+
+    </style>
+</head>
+<body>
+    <header>
+        <nav>
+            <ul>
+                <li><a href="#">Menyja 1</a></li>
+                <li><a href="#">Menyja 2</a></li>
+                <li><a href="#">Menyja 3</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <section class="element">
+            <h2>Element 1</h2>
+            <p>Paragrafi ne div-in e pare</p>
+        </section>
+        <section class="element">
+            <h2>Element 2</h2>
+            <p>Paragrafi ne divin e dyte</p>
+        </section>
+        <section class="element">
+            <h2>Element 3</h2>
+            <p>Paragrafi ne divin e trete</p>
+        </section>
+        <section class="element">
+            <h2>Element 4</h2>
+            <p>Paragrafi ne divin e katert</p>
+        </section>
+        <section 
